@@ -46,6 +46,7 @@ header{
     top: 0;
     left: 0;
     z-index: 100;
+    
 }
 
 .nav{
@@ -53,6 +54,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 20px 35px;
+    
 }
 
 #menu-icon{
@@ -76,6 +78,7 @@ header{
 .navbar{
     display: flex;
     column-gap: 2rem;
+    
 }
 
 .navbar a{
@@ -175,4 +178,73 @@ header{
 
 .btn:hover{
     background: #f7e202;
+}
+
+.heading{
+    text-align: center;
+    color: var(--text-color);
+}
+.heading span{
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.heading p{
+    font-size: 0.983rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-container .box{
+    flex: 1 1 17rem;
+    position: relative;
+    height: 200px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 10px 10px 5px var(--text-colour-dark);
+  
+}
+
+.service-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.service-container .box img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.service-container .box h2{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    background: var(--text-color);
+    padding: 8px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.service-container .box:hover h2{
+    background: var(--main-color);
+}
+
+.service-container .box h2:hover{
+    background: #f7e202;
+    cursor: pointer;
+}
+
+header.sticky{
+    background: var(--bg-color);
 }
