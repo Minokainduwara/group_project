@@ -1,3 +1,5 @@
+/*Minoka*/
+
 /*Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
@@ -105,6 +107,10 @@ header{
     color: var(--text-color);
 }
 
+#sign-in:hover{
+    color: var(--main-color);
+}
+
 .search-box{
     position: absolute;
     top: 110%;
@@ -116,6 +122,10 @@ header{
     border-radius: 0.5rem;
     clip-path: circle(0% at 100% 0%);
     transition: 0.4s;
+}
+
+.search-box:hover{
+    color: var(--main-color);
 }
 .search-box.active{
     clip-path: circle(144% at 100% 0%);
@@ -247,4 +257,103 @@ header{
 
 header.sticky{
     background: var(--bg-color);
+}
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-img{
+    flex: 1 1 21rem;
+    box-shadow: 10px 10px 5px var(--text-colour-dark);
+}
+
+.about-text{
+    flex: 1 1 21rem;
+}
+
+.about-text span{
+
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.about-text h2{
+    font-size: 1.7rem;
+    color: var(--text-color);
+}
+
+.about-text p{
+    font-size: 0.938rem;
+    margin: 0.5rem 0 1.4rem;
+    color: var(--text-color);
+}
+
+/*about us page */
+
+.about_home{
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    min-height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: url(img/background_5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left ;
+
+}
+
+.about_us_heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    
+    
+}
+
+.about_us_heading h1{
+    font-size: 50px;
+}
+
+.about_Us_Content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.about_Us_Content h2{
+    color: var(--main-color);
+}
+
+.about_Us_Content p{
+    color: var(--text-color);
+    text-align: center;
+}
+
+.about_us_img_footer{
+    color: var(--text-color);
+    
+}
+
+.about_us_img_footer .ft i{
+    font-size: 1.5rem;
+}
+.about_us_img_footer .ft span{
+    font-size: 1.5rem;
+    font-weight: 800;
 }
