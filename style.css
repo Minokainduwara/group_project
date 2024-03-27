@@ -329,7 +329,8 @@ header.sticky{
 .about_Us_Content{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Optional: Center horizontally */
+    justify-content: center; /* Center vertically */
     margin: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -347,13 +348,46 @@ header.sticky{
 
 .about_us_img_footer{
     color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
     
 }
 
 .about_us_img_footer .ft i{
+    
     font-size: 1.5rem;
+    align-content: center;
 }
 .about_us_img_footer .ft span{
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 800;
 }
+
+.about_us_img_footer div{
+    margin-top: 250px;
+    padding: 30px;
+    
+}
+
+table{
+    color: var(--text-color);
+}
+table th{
+    border: 1px solid var(--text-color);
+    padding: 4px;
+    width: 300px;
+}
+
+td{
+    border: 1px solid var(--text-color);
+    padding: 4px;
+    width: 300px;
+    text-align: center;
+}
+
+.caption-div{
+    margin-top: 1rem;
+    color: var(--text-color);
+}
+
