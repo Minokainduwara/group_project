@@ -391,3 +391,11 @@ td{
     color: var(--text-color);
 }
 
+.body-about-us{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
