@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 1rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+body{
+	background: url(../img/background_9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.form{
+	position: relative;
+	width: 400px;
+	height: 550px;
+	border: 2px solid rgba(255, 255, 2550.5);
+	border-radius: 20px;
+	backdrop-filter: blur(15px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.form h2{
+	color: #fff;
+	text-align: center;
+	font-size: 32px;
+}
+.form .username{
+	position: relative;
+	margin: 30px 0;
+	width: 310px;
+	border-bottom: 2px solid #fff;
+}
+.form .username input{
+	width: 100%;
+	height: 45px;
+	background: transparent;
+	border: none;
+	outline: none;
+	padding: 0 20px 0 5px;
+	color: #fff;
+	font-size: 16px;
+}
+i{
+	position: absolute;
+	color: #fff;
+	top: 13px;
+	right: 0;
+
+}
+input::placeholder{
+	color: #fff;
+}
+.btn{
+	color: #000;
+	background: #f5ab0c;
+	width: 100%;
+	height: 50px;
+	border-radius: 5px;
+	outline: none;
+	font-size: 17px;
+	cursor: pointer;
+	box-shadow: 3px 0 10px rgba(0, 0, 0, 0.5);
+}
+.btn:hover{
+    background: #f7e202;
+    font-weight: bold;
+}
+.group{
+	display: flex;
+	justify-content: space-between;
+
+}
+.group a{
+	color: blue;
+	position: relative;
+	top: 10px;
+	text-decoration: none;
+	font-weight: 200;
+}
+.group a:focus{
+	text-decoration: underline;
+}
+#result{
+	color: red;
+	font-weight: 600;
+	position: relative;
+	top: 25px;
+
+}
+	</style>
+</head>
+<body>
+	<body>
+	<div class="container">
+		<div class="form">
+			<form action="" name="Formfill" onsubmit="return validation()">
+				<h2>Sign In</h2>
+				<p id="result"></p>
+				<div class="username">
+					<i class='bx bxs-envelope'></i>
+					<input type="email" name="Email" placeholder="Email">
+				</div>
+				<div class="username">
+					<i class='bx bxs-lock-alt'></i>
+					<input type="password" name="Password" placeholder="Password">
+				</div>
+				<div class="button">
+					<input type="submit" class="btn" value="Sign In">
+				</div>
+				<div class="group">
+					<span><a href="#">Forget Password</span>
+					<span><a href="./register.html">Register</span>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="register.js"></script>
+</body>
+</body>
+</html>

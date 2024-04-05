@@ -399,3 +399,154 @@ td{
 
 }
 
+.about_Us_Content ul{
+    color: var(--text-color);
+    
+}
+
+/* Blog Container */
+
+.blog-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.blog-container .box{
+    flex: 1 1 13rem;
+    padding: 20px;
+}
+
+.blog-container .box:hover{
+    background: #686565;
+}
+
+.blog-container .box span{
+    font-size: 0.8rem;
+    color: var(--main-color);
+}
+
+.blog-container h3{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.blog-container .box p{
+    font-size: 0.983rem;
+    margin: 4px 0;
+    color: var(--text-color);
+}
+
+.blog-container .box .blog-btn{
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    color: var(--text-color);
+}
+
+.blog-container .box .blog-btn.bx{
+    font-size: 20px;
+}
+
+.blog-container .box .blog-btn:hover{
+    color: var(--main-color);
+    column-gap: 0.7rem;
+    transition: 0.4s;
+}
+
+.footer{
+    background: var(--text-color);
+    color: #f6f6f6;
+    border-top: 2px solid var(--main-color);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.footer-container .logo{
+    color: var(--bg-color);
+    margin-bottom: 1rem;
+}
+
+.footer-container .footer-box{
+    display: flex;
+    flex-direction: column;
+    color: var(--text-colour-dark);
+    
+}
+
+.social{
+    display: flex;
+    align-items: center;
+}
+
+.social a{
+    font-size: 24px;
+    color: var(--text-colour-dark);
+}
+
+.social a:hover{
+    color: var(--main-color);
+}
+
+.footer-box h3{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.footer-box a, .footer-box p{
+    color: #818181;
+    margin-bottom: 10px;
+}
+
+.footer-box a:hover{
+    color: var(--main-color);
+}
+
+.footer-box p:hover{
+    color: var(--main-color);
+}
+
+.contact_us{
+    color: var(--text-color);
+}
+
+.con-us{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.ph_num{
+    
+    padding: 3rem;
+    background-color: #383736;
+    
+}
+
+.form_in{
+    padding: 3rem;
+    background-color: #f5ab0c;
+}
+
+.contact-div{
+    margin-bottom: 4rem;
+}
+
+.copyright{
+    color: var(--text-colour-dark);
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+
