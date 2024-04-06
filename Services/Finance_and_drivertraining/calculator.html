@@ -69,7 +69,8 @@
 }
 		.gura{
 			display: flex;
-			justify-content: center;
+			flex-direction: column;
+			align-items: center;
 		}
 	</style>
 </head>
@@ -79,7 +80,7 @@
 		<h1>Loan Calculator</h1>
 
 		<!--call to js function-->
-		<p>Amount (US$)	 :<br>
+		<p>Amount (lkr)	 :<br>
 			<input id="amount" type="number"
 			onchange="Calculate()">
 		</p>
@@ -99,7 +100,7 @@
 
 
 	<script src="calculator.js"></script>
-	<a href="index2.html">
+	<a href="./Finance.html">
 		<div class="gura">
 			<button class="button">Back</button>
 		</div>
