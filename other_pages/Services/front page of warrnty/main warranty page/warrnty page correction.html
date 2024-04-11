@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUHAUTO</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../../../style.css">
+
+    <!--INTERNAL CSS INSERT -->
+    <style type="text/css">
+        /*Insert gaveshi.css file*/
+
+        /*Google Fonts*/
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        * {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-padding-top: 1rem;
+            scroll-behavior: smooth;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+
+        }
+
+        :root {
+            --main-color: #f5ab0c;
+            --text-color: #fff;
+            --bg-color: #111619;
+            --text-colour-dark: #000000;
+        }
+
+        section {
+            padding: 4rem 0 2rem;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        body {
+            background-color: var(--bg-color);
+        }
+
+        .container {
+            max-width: 1068px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        header {
+            display: block;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 35px;
+
+        }
+
+        #menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--text-color);
+            display: none;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-color);
+
+        }
+
+        .logo span {
+            color: var(--main-color);
+        }
+
+        .navbar {
+            display: flex;
+            column-gap: 2rem;
+
+        }
+
+        .navbar a {
+            color: var(--text-color);
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .navbar a:hover,
+        .navbar .active {
+            color: var(--main-color);
+            border-bottom: 3px solid var(--main-color);
+        }
+
+        #search-icon {
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--text-color);
+        }
+
+        #sign-in {
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--text-color);
+        }
+
+        .search-box {
+            position: absolute;
+            top: 110%;
+            right: 0;
+            left: 0;
+            background: var(--text-color);
+            box-shadow: 4px 4px 20px rgba(129, 207, 209, 0.1);
+            border: 1px solid var(--main-color);
+            border-radius: 0.5rem;
+            clip-path: circle(0% at 100% 0%);
+            transition: 0.4s;
+        }
+
+        .search-box.active {
+            clip-path: circle(144% at 100% 0%);
+            transition: 0.4s;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 20px;
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 1rem;
+        }
+
+        .search-and-sign {
+            display: flex;
+            column-gap: 2rem;
+        }
+
+        /*end of the gaveshi.css file*/
+
+        /*the html page css*/
+
+        #demo {
+            color: #f3af1b;
+            font-family: cursive;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .content_para {
+            color: aliceblue;
+            text-align: center;
+        }
+
+        .vehicle-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .vehicle-container .box {
+            flex: 1 1 17rem;
+            position: relative;
+            height: 230px;
+            overflow: hidden;
+        }
+
+        .vehicle-container .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+
+        .vehicle-container .box h2 {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            font-weight: 400;
+            font-size: 1rem;
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 8px;
+            border-radius: 0.5rem;
+            width: 110px;
+            text-align: center;
+            color: #000;
+        }
+
+        .vehicle-container .box:hover h2 {
+            background: rgb(235, 174, 8);
+            color: black;
+        }
+        .backgrund_img{
+            margin: auto;
+            min-height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center left;
+            background-image: url("../main page images/backgrund1.jpg");
+            margin-left: 4%;
+            margin-right: 4%;
+        }
+        .backgrund_img .backgrund_img_text h1{
+            color: #f5ab0c;
+            text-shadow: 1px 1px #000;
+            font-size: 35px;
+        }
+        .backgrund_img .backgrund_img_text p{
+            color: var(--text-color);
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        .section1{
+            margin-left: 4%;
+            margin-right: 4%;
+        }
+    </style>
+
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="jquery-3.7.1.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="nav container">
+            <!-- Menu icon -->
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!-- Logo -->
+            <a href="#" class="logo"><i class='bx bxs-car'></i> RUH<span>AUTO</span></a>
+
+            <!-- Nav List-->
+            <ul class="navbar">
+                <li><a href="../../../../index.html" >Home</a></li>
+                <li><a href="#" class="active">EXTENDED WARRENTY PROGRAMME</a></li>
+            </ul>
+
+            <div class="search-and-sign">
+
+                <!--Search Icon-->
+                <i class='bx bx-search' id="search-icon"></i>
+
+                <!--Sign in Icon-->
+                <a href="#sign_in"><i class='bx bxs-user-circle' id="sign-in"></i></a>
+            </div>
+
+
+
+            <!--Search Box-->
+            <div class="search-box container">
+                <input type="search" name="" id="" placeholder="search here...">
+            </div>
+        </div><br>
+
+    </header>
+
+    <!--insert warrnty page-->
+
+    <section class="backgrund_img">
+        <div class="backgrund_img_text">
+            <h1 id="warrnty_head"> Welcome to RUHAUTO Warranty Services.</h1>
+            <p>where excellence meets reliability in every vehicle we create.<br>
+                We understand that purchasing a new automobile is an investment.</p>
+        </div>
+    </section>
+    
+
+        <section class="section1">
+
+            <p id="demo">which is why we offer comprehensive warranty services to ensure your peace of mind and
+                    satisfaction.</p><br>
+
+            <h2 class="content_para">
+                Our commitment to quality extends beyond the manufacturing process.<br>
+                With our warranty services, we provide unparalleled support to safeguard your investment and keep you on
+                the road with confidence. Here's what you can expect from our warranty coverage<br><br>
+            </h2>
+        </section>
+
+
+        <section>
+            <div class="vehicle-container container">
+
+                <div class="box">
+                    <!--SUV-->
+                    <img src="../main page images/front suv images.jpeg" alt="">
+                    <!--link SUV warranty page.html-->
+                    <a target="_self" href="../pgs need to link/html to link/suv warranty.html">
+                        <h2>SUV - More </h2>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <!--Bike-->
+                    <img src="../main page images/front bike.jpg" alt="">
+                    <!--link bike warranty page.html-->
+                    <a target="_self" href="../pgs need to link/html to link/bike warranty page.html">
+                        <h2>Bike - More</h2>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <!--Van-->
+                    <img src="../main page images/front van today.jpeg" alt="">
+                    <!--link van warranty page.html-->
+                    <a target="_self" href="../pgs need to link/html to link/van warranty.html">
+                        <h2>Van - More</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--insert second image raw-->
+        <section>
+            <div class="vehicle-container container">
+
+                <div class="box">
+                    <!--car-->
+                    <img src="../main page images/front car.jpg" alt="">
+                    <!--link car warranty page.html-->
+                    <a target="_self" href="../pgs need to link/html to link/car warranty page.html">
+                        <h2>Car - More</h2>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <!--jeep-->
+                    <img src="../main page images/front jeep.jpg" alt="">
+                    <!--link jeep warranty page.html-->
+                    <a target="_self" href="../pgs need to link/html to link/jeep warranty page.html">
+                        <h2>Jeep-More</h2>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <!--electrical vehicle-->
+                    <img src="../main page images/front electrical car image.jpeg" alt="">
+                    <!--link electronic car warranty page.html-->
+                    <a target="_self" href="../pgs need to link/html to link/Electronic car Warranty.html">
+                        <h2>Electrical</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    <!--Link to js -->
+    <script src="../../../../main.js"></script>
+    <!--end of the html code-->
+</body>
+
+</html

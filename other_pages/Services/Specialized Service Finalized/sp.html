@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUHAUTO</title>
+	<style>
+
+		/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 1rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --main-color: #f5ab0c;
+    --text-color:#fff ;
+    --bg-color: #111619;
+    --text-colour-dark: #000000 ;
+}
+
+section{
+    padding: 4rem 0 2rem;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+.container{
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+header{
+    display: block;
+    width: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+    
+}
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+    display: none;
+}
+
+.logo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+
+}
+
+.logo span{
+    color: var(--main-color);
+}
+
+.navbar{
+    display: flex;
+    column-gap: 2rem;
+    
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar a:hover,.navbar .active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+#search-icon{
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+#sign-in{
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.search-box{
+    position: absolute;
+    top: 110%;
+    right: 0;
+    left: 0;
+    background: var(--text-color);
+    box-shadow: 4px 4px 20px rgba(129, 207, 209, 0.1);
+    border: 1px solid var(--main-color);
+    border-radius: 0.5rem;
+    clip-path: circle(0% at 100% 0%);
+    transition: 0.4s;
+}
+.search-box.active{
+    clip-path: circle(144% at 100% 0%);
+    transition: 0.4s;
+}
+.search-box input{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+}
+
+.search-and-sign{
+    display: flex;
+    column-gap: 2rem;
+}
+		#h3{
+			text-align: center;
+			color: white;
+			font-family:  sans-serif;
+		}
+		#h4{
+			text-align: justify;
+			color: whitesmoke;
+			font-family: sans-serif;
+		}
+        
+		.topicofpage{
+			color: white;
+			font-family: sans-serif;
+			font-size: 15px;
+			text-align: center;
+		}
+
+		#div1{     	
+     border-radius:25px;
+	 background: #00000000;
+	 padding: 20px;
+	 width: 600px;
+	 height: 100px;
+	 position:relative;
+	 font-display: white;
+    }
+	#button1{
+		cursor: pointer;
+		border: 1px solid #3498db;
+		background-color: rgba(24, 100, 171, 0.1);
+		height: 30px;
+		width: 150px;
+		color: #3498db;
+		font-size: 1.0em;
+		box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+   
+	 }
+	 .divcolor{
+		color: white;
+	 }
+	 .change{
+	   color:#ffff;	
+	 }
+	 #search1{
+		background-color:#ffff;
+		border:#0000;
+	 }
+	 #button1{
+		radius:2px;
+	 }
+	 #section1{
+		color:#fff9f9;
+	 }
+	.para1{
+		color: #ffff;
+	}
+	h1{
+		color:#f5ab0c;
+	}
+	.paragraph{
+		color:#ffff;
+	}
+	
+	body{
+			background-color: #111619;
+		}
+	.search_main{
+			 background: linear-gradient(to left, #f5ab0c -80%, #000000 100%);
+			display: flex;
+			flex-direction: column;
+			padding: 15px;
+			padding-top: 150px;
+			justify-content: center;
+			align-items: center;
+	}
+		.search_2{
+			display: flex;
+			flex-direction: row;
+			margin-top: 20px;
+			width: 50%;
+		}
+		.search_1 label{
+			font-size: 2rem;
+			color: #f5ab0c;
+			text-shadow: 1px 1px #000;
+		}
+		.search_3 .search_text{
+			height: 45px;
+			background-color: rgba(255, 255, 255, 0.1);
+			width: 100%;
+			border: 1px solid #f5ab0c;
+			border-radius: 3px;
+
+		}
+		.search_4 .search_btn{
+			height: 50px;
+			width: 110px;
+			border: 2px solid #f5ab0c;
+			border-radius: 3px;
+			background-color: #f5ab0c;
+			color: #000;
+			text-shadow: 0.3px 0.3px #000;
+		}
+		.search_3{
+			margin-right: 15px;
+			width: 100%;
+		}
+		
+		.search_2 .search_4 .search_btn:hover {
+	    	border: 1px solid #fff;
+		}
+
+   /*style for service lists*/
+      .service_lists{
+		background:  #111619;
+			display: flex;
+			flex-direction: column;
+			padding: 30px;
+			justify-content: center;
+			align-items: left;
+			border: 2px solid #ffff ;
+			margin-bottom: 30px;
+	  }
+	  #demo{
+		text-shadow: 1px 1px #000;
+		font-size: 1.2rem;
+		color: white;
+	  }
+
+      /*button modify*/
+	  .btnmodify{
+		 width: 150px;
+		 height: 20px;
+		 background-color: rgb(201, 155, 55);
+		 border: 1px solid black;
+		 align-items: center;
+	  }
+
+	  .whole_list{
+		align-items: center;
+		padding-left: 150px;
+		padding-right: 150px;
+		
+
+	  }
+	  .btnmodify :hover{
+		background-color: #ffee04;
+	    color: black;
+	  }
+
+
+	</style>
+
+	<link rel="stylesheet" href="../../../style.css">
+
+
+
+ 
+</body>
+</html>
+
+		
+
+    <!-- CSS -->
+	<!--this is main css folder linking (common CSS with color codes)-->
+<!---  <link rel="stylesheet" href="gaveshi.css">-->
+	
+	
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+	<!--insert jqery and js files-->
+     <script src="jquery-3.7.1.js"></script>
+     </head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <!-- Nav Container -->
+        <div class="nav container">
+            <!-- Menu icon -->
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!-- Logo -->
+            <a href="#" class="logo"><i class='bx bxs-car'></i> RUH<span>AUTO</span></a>
+
+            <!-- Nav List-->
+            <ul class="navbar">
+                <li><a href="../../../index.html" >Home</a></li>
+                <li><a href="#services" class="active">SPECIALIZED SERVICES</a></li>
+            </ul>
+
+            <div class="search-and-sign">
+
+                <!--Search Icon-->
+                <i class='bx bx-search' id="search-icon"></i>
+
+                <!--Sign in Icon-->
+                <a href="#sign_in"><i class='bx bxs-user-circle' id="sign-in"></i></a>
+            </div>
+
+
+
+            <!--Search Box-->
+            <div class="search-box container">
+                <input type="search" name="" id="" placeholder="search here...">
+            </div>
+        </div><br>
+
+    </header>
+
+
+
+    
+   
+   <!--insert my html code-->
+
+   <!--insert search  button features-->
+
+   <section class="search_main">
+
+	<div class="search_1">
+		<label>Find Your Features Here!</label>
+	</div>
+
+	<div class="search_2">
+		<div class="search_3">
+		<input type="text" id="search1" placeholder="    Search here..." class="search_text">
+		</div>
+
+		<div class="search_4">
+		<input id ="button1" type="button" name="btn" value="Search Now" class="search_btn"><br><br>
+		
+	   </div>
+	</div>
+	<div class="search_5">
+		<p id="demo"></p>
+	</div>
+	<!--end of the search button features-->
+
+</section>
+   <br><br>
+   <!--start of the website page content-->
+	<div class="topicofpage">
+
+	<h2>Welcome to RUHAUTO Specialized Service</h2>
+	</div>
+
+   
+	<section>		
+	<div style="margin-top: 0px;">
+	  <p>
+	  <h3 id="h3">
+			Unlock the potential of your vehicle with our customizations!<br><br>
+		</h3>
+			<h4 id="h4">Dive into a world where your ideas come to life. 
+			Feel the thrill of turning your vision into reality.
+			Let's make your dream ride a meaningful expression of your personality and style.
+			Get ready to embark on a journey of creativity and innovation.
+			Your vehicle, your ideas, brought to life like never before!
+		</h4>
+	  </p>
+	  </div>
+	</section>
+  
+   <!--start of the button -->
+   <!--<button id="btn1">More</button>-->
+   <!-- Topic 01-->
+ <section class="whole_list">
+   <section class="service_lists">
+   <div id="div2" class="divcolor" >
+	  <p class="change">
+		<h1>Exterior Modifications:</h1>
+					<button id="btn1" class="btnmodify"><h3>More</h3></button>
+					<br>	
+					<ul id="ul1">
+						    <li> Custom paint jobs or vinyl wraps to change the color or add graphics.</li>
+							<li>Body kits, spoilers, or aftermarket bumpers to enhance the vehicle's appearance.</li>
+							<li>Custom lighting, such as LED headlights, taillights, or underbody lighting.</li>
+							<li>Window tinting for privacy, aesthetics, or UV protection.</li>
+					</ul>
+				    
+		</p>		
+	</div>
+	</section>
+				
+	 <!-- Topic 02-->
+	 <section class="service_lists">
+	 <div id="div3" class="divcolor">
+       <p class="change">
+	   <h1>Interior Customization:</h1>
+		  <button id="btn2" class="btnmodify"><h3>More</h3></button>
+		  <br>
+		     <p class="paragraph" id="p2"></p>
+					    <ul id="ul2">
+							   <li>Engine tuning or modifications to increase horsepower, torque, or fuel efficiency.</li>
+								<li>Aftermarket exhaust systems for improved sound and performance.</li>
+								<li>Suspension upgrades for better handling, ride comfort, or off-road capability.</li>
+								<li>Brake system upgrades for improved stopping power and performance.</li>
+					    </ul>
+		      </p>
+     </div>
+	 </section>
+    <!-- Topic 03-->
+	<section class="service_lists">
+	<div id="div4" class="divcolor">
+     <p class="change">
+	 <h1>Performance Upgrades:</h1>
+	   <button id="btn3" class="btnmodify"><h3>More</h3></button>
+	   <br>
+		 <p class="paragraph" id="p3"></p>
+				<ul id="ul3">
+			    	<li> Engine tuning or modifications to increase horsepower, torque, or fuel efficiency.</li>
+					<li>Aftermarket exhaust systems for improved sound and performance.</li>
+					<li>Suspension upgrades for better handling, ride comfort, or off-road capability.</li>
+					<li>Brake system upgrades for improved stopping power and performance.</li>
+				</ul>
+	     </p>
+	 </div>
+	</section>
+
+	 <!-- Topic 04-->
+ 
+	 <section class="service_lists">
+	 <div id="div5" class="divcolor">
+	<h1>Wheels and Tires:</h1>
+	 <button id="btn4" class="btnmodify"><h3>More</h3></button>
+	 <br>
+	  <p class="paragraph" id="p4">
+		  <ul id="ul4">
+				<li>Custom alloy wheels or rims in different sizes, styles, and finishes.</li>
+				<li>Performance tires for enhanced traction, handling, or off-road capability.</li>
+				<li>Tire lettering or custom tire decals for a personalized touch.</li>
+		   </ul>
+	    </p>
+     </div>
+	 </section>
+		
+	 <!-- Topic 05-->
+	 <section class="service_lists">
+	 <div id="div6" class="divcolor">
+	<h1>Functional Modifications:</h1>
+	    <button id="btn5" class="btnmodify"><h3>More</h3></button>
+		<br>
+	      <p  class="paragraph" id="p5">
+		    <ul id="ul5">
+					<li>Roof racks, cargo carriers, or bike racks for added storage or outdoor gear transport.</li>
+					<li> Towing packages or hitch installations for towing trailers, boats, or recreational vehicles.</li>
+					<li> Off-road accessories such as skid plates, winches, or lift kits for adventurous driving.</li>
+		    </ul>
+	      </p>
+	  </div>
+	 </section>
+		  
+	 <!-- Topic 06-->
+	 <section class="service_lists">
+	 <div id="div7" class="divcolor">
+	<h1>Specialized Features:</h1>
+		<button id="btn6" class="btnmodify"><h3>More</h3></button>
+		<br>
+			<p class="paragraph" id="p6">
+			   <ul id="ul6">
+				  <li> Vehicle security systems or GPS tracking devices for theft prevention and recovery.</li>
+				  <li>Custom steering wheels, shift knobs, or pedal covers for a personalized driving experience.</li>
+				  <li>Performance gauges or digital displays for monitoring vehicle parameters.</li>
+			   </ul>
+			 </p>
+	  </div>
+	 </section>
+
+	 <!-- Topic 07-->
+	 <section class="service_lists">
+	 <div id="div8" class="divcolor">
+	<h1>Electronics and Connectivity:</h1>
+	   <button id="btn7" class="btnmodify"><h3>More</h3></button>
+	   <br>
+	      <p class="paragraph" id="p7">
+	         <ul id="ul7">
+			    <li>Advanced infotainment systems with touchscreen displays, navigation, and smartphone integration.</li>
+			    <li>  Vehicle tracking and remote start systems for convenience and security.</li>
+			    <li> Upgraded sound systems with amplifiers, subwoofers, and premium speakers.</li>
+			</ul>
+          </p>
+	
+	
+   </div>
+   </section>
+
+</section>
+
+    <!--Footer -->
+	<section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+
+                <a href="#" class="logo"><i class='bx bxs-car'></i> RUH<span>AUTO</span></a>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Page</h3>
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About Us</a>
+                <a href="#contact-us">Contact Us</a>
+                <a href="#blog">Our Blog</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Legal</h3>
+                <a href="#">Privacy</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p href="#">Sri Lanka</p>
+                <p href="#">United States</p>
+                <p href="#">Japan</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; RuhAuto All right reserved</p>
+        </div>
+    </section>
+
+
+<!--end of the button-->
+
+<!--start of the js and jquery-->
+   <script>
+    $(document).ready(function(){
+		$("#ul1").hide(1000);
+		$("#ul2").hide(1000);
+		$("#ul3").hide(1000);
+		$("#ul4").hide(1000);
+		$("#ul5").hide(1000);
+		$("#ul6").hide(1000);
+		$("#ul7").hide(1000);
+
+        $("#div1").animate({width:"1000px"},"slow");
+
+         $("#btn1").click(function(){
+            $("#div2").animate({width:"1000px"},"slow");
+			$("#ul1").hide(1000);
+			$("#ul1").show();	
+		 });
+			
+		$("#btn2").click(function(){
+            $("#div3").animate({width:"1000px"},"slow");
+			$("#ul2").hide(1000);
+			$("#ul2").show();
+		 });
+
+		$("#btn3").click(function(){
+            $("#div4").animate({width:"1000px"},"slow");
+			$("#ul3").hide(1000);
+			$("#ul3").show();
+			});
+
+		$("#btn4").click(function(){
+            $("#div5").animate({width:"1000px"},"slow");
+			$("#ul4").hide(1000);
+			$("#ul4").show();
+			
+        });
+
+		$("#btn5").click(function(){
+            $("#div6").animate({width:"1000px"},"slow");
+			$("#ul5").hide(1000);
+			$("#ul5").show();	
+        });
+
+		$("#btn6").click(function(){
+            $("#div7").animate({width:"1000px"},"slow");
+			$("#ul6").hide(1000);
+			$("#ul6").show();
+        });
+
+		$("#btn7").click(function(){
+            $("#div8").animate({width:"1000px"},"slow");
+			$("#ul7").hide(1000);
+			$("#ul7").show();
+        });
+	});
+
+ document.getElementById("button1").onclick = function(){
+            let letter = document.getElementById("search1").value;
+            let msg;
+			alert(letter);
+            if((letter >= 'a' && letter <= 'z') || (letter >= 'A' && letter <= 'Z')){
+                switch(letter.toLowerCase()){ // Convert to lowercase for case insensitive comparison
+                    case "ext":
+					case 'e':
+                        msg = "Exterior Modifications:";
+                        break;
+                    case "int":
+					case 'i':
+                        msg = "Interior Customization:";
+                        break;
+                    case "per":
+					case 'p':
+                        msg = "Performance Upgrades:";
+                        break;
+                    case "whee":
+					case 'w':
+                        msg = "Wheels and Tires:";
+                        break;
+                    case "fun":
+					case 'f':
+                        msg = "Functional Modifications:";
+                        break;
+                    case "spec":
+					case 's':
+                        msg = "Specialized Features:";
+                        break;
+                    case "elec":
+                        msg = "Electronics and Connectivity:";
+                        break;
+                    default:
+                        msg = "No match found";
+                }
+            } 
+			else {
+                msg = "Invalid input";
+            }
+            document.getElementById("demo").innerHTML = "Here your service is: " + msg;
+        };
+    
+
+   </script>
+
+    <!--Link to js -->
+ 	<script src="../../../main.js"></script>
+
+   <!--end of the js and j-query-->
+   <!--end of the html code-->
+</body>
+</html
+	
+    

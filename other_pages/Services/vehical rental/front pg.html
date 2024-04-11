@@ -1,0 +1,439 @@
+<html>
+  <head>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+     //jQuery
+      $(document).ready(function(){
+         $(".para").hide();
+        $("#more").click(function(){
+          $(".para").toggle(800);
+        });
+      });
+    </script>
+
+
+    <style>
+      /*css*/
+      body{
+        background-image: url('car 3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      p {
+        color: white;
+      }
+      #formdiv {
+        color: #fff;
+        background-color: #111619;
+        height: 600px;
+        float: center;
+        width: 500px;
+        margin: auto;
+        
+      }
+      h1{
+        text-align: center;
+        color:whitesmoke ;
+        font-style: italic;
+        
+      }
+      h2 {
+        color: #f5ab0c;
+        text-decoration: underline overline;
+      }
+      h3 {
+        color: #add8e6;
+
+      }
+      #btn {
+        width: 20%;
+        height: 50px;
+        color: white;
+        background: linear-gradient(to left, #f5ab0c -80%, #000000 100%);
+              }
+      .labale {
+        display: flex;
+      }
+      .left_fo {
+        display: flex;
+
+        margin: 20px;
+      }
+
+      .input_div {
+        display: flex;
+        
+        width:100px;
+        justify-content: center;
+        margin: auto;
+        left: 100px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        height: 30px;
+        width: 350px;
+        font-size: 15px;
+        font-family: Verdana;
+        line-height: 30px;
+        display:inline-block;
+      
+     
+          }
+
+
+      #more{
+        width: 100px;
+        height: 50px;
+        color: white;
+        background-color: #000;
+        
+      }
+      #tit{
+        text-align: center;
+        font-family: cursive;
+        font-size: 40px;
+        
+        font-weight:bold ;
+        color:#f5ab0c;
+       
+      }
+
+    </style>
+
+    <script src="./gggg.js"></script>
+
+  </head>
+  <body>
+    <p id="tit">Welcome to RUHAUTO Rental Services</p>
+    <h1>Unlock Your Journey with Our Wheels!</h1>
+
+    <div class="form_center">
+      <form id="myform">
+        <div id="formdiv">
+          <br />
+          <div class="labale">
+            <div class="left_fo">Pick up :</div>
+            <div class="input_div">
+              <input type="text" id="pickup" />
+            </div>
+          </div>
+
+          <div class="labale">
+            <div class="left_fo">Drop of :</div>
+            <div class="input_div">
+              <input type="text" id="des" />
+            </div>
+          </div>
+
+          <div class="labale">
+            <div class="left_fo">Pick up date:</div>
+            <div class="input_div">
+              <input type="date" id="pdate" />
+            </div>
+            <br /><br />
+          </div>
+          <div class="labale">
+            <div class="left_fo">Time :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            <div class="input_div">
+              <input type="time" id="ptime" />
+            </div>
+            <br /><br />
+          </div>
+          <div class="labale">
+            <div class="left_fo">Drop of date:</div>
+            <div class="input_div">
+              <input type="date" id="ddate" />
+            </div>
+            <br /><br />
+          </div>
+          <div class="labale">
+            <div class="left_fo">Time:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            <div class="input_div">
+              <input type="time" id="dtime" />
+            </div>
+            <br /><br />
+          </div>
+          <div class="labale">
+            <div class="left_fo">Vehicle Type:</div>
+            <div class="input_div">
+              <select id="vehi">
+                <option value="E">Electronic car</option>
+                <option value="C" id="C">Car</option>
+                <option value="S">SUV</option>
+                <option value="J">Jeeep</option>
+                <option value="V">Van</option>
+                <option value="B">Bike</option>
+                <option value="A">All</option>
+              </select>
+            </div>
+            <br /><br />
+          </div>
+          <div class="labale">
+            <div class="left_fo">Distance(in km):</div>
+            <div class="input_div">
+              <input type="text" id="distance" />
+            </div>
+            <br /><br />
+          </div>
+
+          <div class="left_fo">
+            <input
+              type="submit"
+              value="SEARCH"
+              onclick="validateForm()"
+              id="btn"
+            />&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="CLEAR" id="btn" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div>
+      <h2>To Passengers</h2>
+      <button type="button" id="more">More</button>
+      <h3 id="heading3">Buckle Up:</h3>
+
+      <p class="para">
+        Remind passengers to always wear their seat belts while the vehicle is
+        in motion for their safety. Encourage the use of seat belts in all
+        seating positions, including back seats.
+      </p>
+      <h3 id="heading3">No Smoking Policy:</h3>
+
+      <p class="para">
+        Inform passengers about the strict no-smoking policy inside the rental
+        vehicle to maintain cleanliness and prevent damage. Advise passengers to
+        refrain from smoking or vaping during the journey.
+      </p>
+      <h3 id="heading3">Child Safety:</h3>
+
+      <p class="para">
+        Provide guidance on the use of child safety seats or boosters for young
+        passengers according to local regulations. Ensure that children are
+        properly secured in approved safety seats based on their age, weight,
+        and height.
+      </p>
+      <h3 id="heading3">Respect the Vehicle:</h3>
+
+      <p class="para">
+        Request passengers to treat the rental vehicle with care and respect to
+        avoid damage or additional charges. Encourage passengers to avoid eating
+        messy foods, spilling beverages, or causing any unnecessary wear and
+        tear.
+      </p>
+      <h3 id="heading3">No Unauthorized Drivers:</h3>
+
+      <p class="para">
+        Emphasize that only authorized drivers listed on the rental agreement
+        are allowed to operate the vehicle. Advise passengers not to allow
+        anyone else, including friends or family members, to drive the rental
+        vehicle without prior approval.
+      </p>
+      <h3 id="heading3">Follow Traffic Laws:</h3>
+
+      <p class="para">
+        Remind passengers to obey traffic laws, speed limits, and road signs for
+        a safe and legal journey. Encourage passengers to be attentive and
+        cooperative with the driver to ensure a smooth ride.
+      </p>
+      <h3 id="heading3">Emergency Procedures:</h3>
+
+      <p class="para">
+        Provide instructions on what to do in case of emergencies such as
+        accidents, breakdowns, or medical incidents. Share emergency contact
+        numbers, roadside assistance details, and evacuation procedures if
+        needed.
+      </p>
+      <h3 id="heading3">Personal Belongings:</h3>
+
+      <p class="para">
+        Advise passengers to keep track of their personal belongings and avoid
+        leaving valuables in plain sight in the vehicle. Remind passengers to
+        check for any personal items before exiting the vehicle at the end of
+        the journey.
+      </p>
+      <h3 id="heading3">Feedback and Assistance:</h3>
+
+      <p class="para">
+        Encourage passengers to provide feedback on their rental experience and
+        any issues encountered during the journey. Offer assistance and support
+        for any concerns or questions passengers may have during the rental
+        period.
+      </p>
+    </div>
+    <div>
+      <h2>To Drivers</h2>
+
+      <h3 id="heading3">Vehicle Inspection:</h3>
+
+      <p class="para">
+        Instruct drivers to conduct a thorough inspection of the rental vehicle
+        before driving, checking for any existing damage, tire pressure, fluid
+        levels, lights, and other essential components. Encourage drivers to
+        report any issues or concerns about the vehicle's condition before
+        starting their journey.
+      </p>
+      <h3 id="heading3">Driving Responsibly:</h3>
+
+      <p class="para">
+        Emphasize the importance of driving responsibly, following speed limits,
+        traffic signs, and rules of the road at all times. Remind drivers to
+        maintain a safe following distance, avoid distractions, and stay focused
+        on the task of driving.
+      </p>
+      <h3 id="heading3">Seat Belt Usage:</h3>
+
+      <p class="para">
+        Require drivers and all passengers in the vehicle to wear seat belts
+        while the vehicle is in motion, regardless of the seating position.
+        Stress the significance of seat belt usage for personal safety and
+        compliance with the law.
+      </p>
+      <h3 id="heading3">No Alcohol or Drugs:</h3>
+
+      <p class="para">
+        Prohibit drivers from operating the vehicle under the influence of
+        alcohol, drugs, or any substances that may impair their driving
+        abilities. Encourage drivers to make responsible decisions and arrange
+        for alternative transportation if they are unable to drive safely.
+      </p>
+      <h3 id="heading3">Authorized Drivers Only:</h3>
+
+      <p class="para">
+        Specify that only drivers listed on the rental agreement are permitted
+        to operate the rented vehicle. Advise drivers not to allow unauthorized
+        individuals to drive the vehicle to avoid liability issues.
+      </p>
+      <h3 id="heading3">Parking and Security:</h3>
+
+      <p class="para">
+        Provide guidance on safe parking practices, including locking the
+        vehicle, rolling up windows, and securing valuables to prevent theft or
+        break-ins. Advise drivers to park in well-lit areas and follow any
+        specific parking regulations or restrictions in the rental agreement.
+      </p>
+      <h3 id="heading3">Maintenance and Emergencies:</h3>
+
+      <p class="para">
+        Instruct drivers to monitor the vehicle's performance during the rental
+        period and promptly report any mechanical issues or warning lights.
+        Provide instructions on how to handle emergencies such as accidents,
+        breakdowns, or flat tires, including contacting roadside assistance or
+        emergency services.
+      </p>
+      <h3 id="heading3">Return Procedures:</h3>
+
+      <p class="para">
+        Communicate the return procedures for the rental vehicle, including fuel
+        level requirements, cleanliness expectations, and any specific
+        instructions for returning the keys. Remind drivers to return the
+        vehicle on time to avoid additional charges and ensure a smooth
+        transition for the next customer.
+      </p>
+      <h3 id="heading3">Customer Support:</h3>
+
+      <p class="para">
+        Offer drivers access to customer support services for assistance with
+        directions, vehicle operation, maintenance issues, or any other concerns
+        that may arise during the rental period. Provide contact information for
+        customer support channels to help drivers resolve issues promptly
+      </p>
+    </div>
+    <div>
+      <h2>Services We are Offering</h2>
+      <h3 id="heading3">Fleet of Vehicles:</h3>
+
+      <p class="para">
+        Offer a diverse fleet of vehicles for rental, including cars, SUVs,
+        trucks, vans, luxury vehicles, and specialty vehicles like convertibles
+        or electric cars. Provide options for different passenger capacities,
+        fuel types, and amenities to cater to varying customer needs.
+      </p>
+      <h3 id="heading3">Online Booking Platform:</h3>
+
+      <p class="para">
+        Allow customers to easily book vehicles through an online platform,
+        providing a user-friendly interface for selecting vehicle types, rental
+        durations, pickup/drop-off locations, and additional services. Enable
+        customers to make reservations, modify bookings, and view rental details
+        conveniently through the website.
+      </p>
+      <h3 id="heading3">Flexible Rental Options:</h3>
+
+      <p class="para">
+        Provide flexible rental options such as daily, weekly, or monthly
+        rentals to accommodate short-term and long-term rental needs. Offer
+        one-way rentals for customers who need to return the vehicle to a
+        different location.
+      </p>
+      <h3 id="heading3">Insurance Coverage:</h3>
+
+      <p class="para">
+        Include insurance coverage options for customers to protect against
+        damages, accidents, theft, and liability. Explain the different
+        insurance packages available and their coverage limits to help customers
+        make informed decisions.
+      </p>
+      <h3 id="heading3">Additional Services:</h3>
+
+      <p class="para">
+        Offer additional services such as GPS navigation systems, child safety
+        seats, roadside assistance, and vehicle protection plans for added
+        convenience and peace of mind. Provide options for customers to
+        customize their rentals with extra features based on their preferences.
+      </p>
+      <h3 id="heading3">Transparent Pricing:</h3>
+
+      <p class="para">
+        Clearly display rental rates, fees, taxes, and any additional charges
+        upfront to ensure transparency in pricing. Provide a breakdown of costs
+        and terms of payment for customers to understand the total expenses
+        associated with the rental.
+      </p>
+      <h3 id="heading3">Customer Support:</h3>
+
+      <p class="para">
+        Offer customer support through various channels such as phone, email,
+        live chat, or in-person assistance at rental locations. Assist customers
+        with booking inquiries, modifications, cancellations, and any issues
+        that may arise during the rental period.
+      </p>
+      <h3 id="heading3">Vehicle Maintenance and Cleanliness:</h3>
+
+      <p class="para">
+        Ensure that rental vehicles are well-maintained, clean, and in good
+        working condition before being rented out to customers. Conduct regular
+        inspections and maintenance checks to uphold safety standards and
+        vehicle reliability.
+      </p>
+    </div>
+
+    <script>
+      /*
+		function validateForm(){
+			let pick=document.getElementById("pickup").value;
+			let drop=document.getElementById("des").value;
+			
+			let km=parseFloat(document.getElementById("distance").value);
+
+			if (pick == "" || drop== "" || km== ""){
+				alert("Please fill out all fields to proceed");
+			}
+			else{
+
+				
+					document.getElementById("myform").addEventListener("submit", function(event) {
+					event.preventDefault(); 
+					alert("Form submitted!");
+    				// Redirect to another page
+					window.location.href = "price list.html"; // Replace 'another-page.html' with your desired page URL
+					});
+			}
+
+		}
+			
+			*/
+    </script>
+  </body>
+</html>

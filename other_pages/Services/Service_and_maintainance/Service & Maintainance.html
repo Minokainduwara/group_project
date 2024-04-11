@@ -1,0 +1,374 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service & Maintenance</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../../style.css">
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        /* Service & Maintenance */
+        .service_home {
+            max-width: 1300px;
+            margin: auto;
+            width: 100%;
+            min-height: 640px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background: url(img/service.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center left;
+
+        }
+
+        .service_heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--text-color);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+
+
+        }
+
+        .service_heading h1 {
+            font-size: 50px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .service_heading p {
+            font-weight: bold;
+            color: var(--main-color);
+        }
+
+        .service_content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+        }
+
+        .service_content h1 {
+            color: var(--main-color);
+            font-size: 30px;
+        }
+
+        .service_content_api h1 {
+            text-align: left;
+            color: var(--main-color);
+            font-size: 30px;
+        }
+
+        .service_content p {
+            color: var(--text-color);
+        }
+
+        .service_content ul {
+            color: var(--text-color);
+        }
+
+        .service_caption {
+            margin-top: 1rem;
+            color: var(--text-color);
+        }
+
+        .body_service {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .service_home-t {
+            margin-top: 12%;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .service_home-t {
+            font-size: 2rem;
+            color: var(--main-color);
+            text-shadow: 1px 1px #000;
+        }
+
+        .service_home-t p {
+            font-size: 1rem;
+            font-weight: 300;
+            margin: 0.5rem 0 1.2rem;
+            color: var(--text-color);
+            text-shadow: 1px 1px #000;
+            padding-top: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .service_text {
+            flex: 1 1 21rem;
+        }
+
+        .service_text h2 {
+            font-size: 1.7rem;
+            color: var(--main-color);
+            text-shadow: 1px 1px #000;
+        }
+
+        .service_text ul {
+            font-size: 0.938rem;
+            color: var(--text-color);
+            text-shadow: 1px 1px #000;
+        }
+
+        #s_pic {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .service_img {
+            flex: 1 1 21rem;
+            align-items: center;
+            box-shadow: 5px 5px 10px var(--text-colour-dark);
+        }
+
+        .service_box_container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service_box {
+            flex: 1 1 13rem;
+            padding: 20px;
+        }
+
+        .service_box:hover {
+            background: #383736;
+        }
+
+        .service_box h3 {
+            font-size: 1.5rem;
+            color: var(--text-color);
+            text-align: center;
+            font-style: italic;
+        }
+
+        .service_box ul {
+            font-size: 0.983rem;
+            margin: 4px 0;
+            color: var(--text-color);
+        }
+    </style>
+
+</head>
+</body>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <!-- Nav Container -->
+        <div class="nav container">
+            <!-- Menu icon -->
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!-- Logo -->
+            <a href="#" class="logo"><i class='bx bxs-car'></i> RUH<span>AUTO</span></a>
+
+            <!-- Nav List-->
+            <ul class="navbar">
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="#about" class="active">Service & Maintenance</a></li>
+            </ul>
+
+            <div class="search-and-sign">
+
+                <!--Search Icon-->
+                <i class='bx bx-search' id="search-icon"></i>
+
+                <!--Sign in Icon-->
+                <a href="#sign_in"><i class='bx bxs-user-circle' id="sign-in"></i></a>
+            </div>
+
+
+
+            <!--Search Box-->
+            <div class="search-box container">
+                <input type="search" name="" id="" placeholder="search here...">
+            </div>
+        </div>
+    </header>
+    <section class="service_home" id="home">
+        <div class="service_home-t">
+            <h1>Service & Maintenance<br>Department</h1>
+            <p>
+                Welcome to RUHAUTO's Service and Maintenance Department! At RUHAUTO, we understand that your vehicle is
+                more than just a means of transportation; it's an investment in your daily life and productivity. That's
+                why we're committed to providing top-notch service and maintenance to keep your vehicle running smoothly
+                for years to come.</p>
+        </div>
+    </section>
+    <section class="service_pic" id="s_pic">
+        <div class="service_img">
+            <img src="img/222.jpg" alt="">
+        </div>
+
+        <div class="service_text">
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li><b>Experienced Technicians:</b> Our team consists of experienced and certified technicians who are
+                    passionate about providing quality service.</li>
+                <br>
+                <li><b>Quality Parts:</b> We use only high-quality parts and materials to ensure lasting repairs and
+                    reliable performance.</li>
+                <br>
+                <li><b>Transparent Pricing:</b> We believe in transparent pricing and will provide upfront estimates
+                    before starting any work on your vehicle.</li>
+                <br>
+                <li><b>Convenient Scheduling:</b> With flexible appointment scheduling options, including online
+                    booking, we make it easy to get the service your vehicle needs.</li>
+                <br>
+                <li><b>Customer Satisfaction Guarantee:</b> Your satisfaction is our top priority. We'll go above and
+                    beyond to ensure you're happy with the service you receive.</li>
+            </ul>
+    </section>
+    <section class="body_service">
+        <div class="service_content">
+            <h1>Our Services</h1>
+            <div class="service_box_container">
+                <!--Box 1 -->
+                <div class="service_box">
+                    <h3>Routine Maintenance</h3>
+                    <br>
+                    <ul>
+                        <li><b>Oil Changes:-</b> Regular oil changes are essential for keeping your engine running
+                            smoothly and extending its lifespan.</li>
+                        <br>
+                        <li><b>Tire Rotations:-</b> Rotating your tires regularly helps ensure even wear and improves
+                            traction and handling.</li>
+                        <br>
+                        <li><b>Brake Inspections and Service:-</b> We'll inspect your brakes for wear and tear and
+                            provide necessary repairs or replacements to keep you safe on the road.</li>
+                        <br>
+                        <li><b>Fluid Checks and Top-Offs:-</b> We'll check and replenish essential fluids like coolant,
+                            brake fluid, and windshield washer fluid as needed.</li>
+                        <br>
+                        <li><b>Filter Replacements:-</b> From air filters to cabin filters, we'll replace filters to
+                            maintain optimal air quality and engine performance.</li>
+                    </ul>
+                </div>
+
+                <!--Box 2 -->
+                <div class="service_box">
+                    <h3>Repairs</h3>
+                    <br>
+                    <ul>
+                        <li><b>Engine Repairs:-</b> Regular oil changes are essential for keeping your engine running
+                            smoothly and extending its lifespan.</li>
+                        <br>
+                        <li><b>Transmission Repairs:-</b> Rotating your tires regularly helps ensure even wear and
+                            improves traction and handling.</li>
+                        <br>
+                        <li><b>Brake Inspections and Service:-</b> We'll inspect your brakes for wear and tear and
+                            provide necessary repairs or replacements to keep you safe on the road.</li>
+                        <br>
+                        <li><b>Fluid Checks and Top-Offs:-</b> We'll check and replenish essential fluids like coolant,
+                            brake fluid, and windshield washer fluid as needed.</li>
+                        <br>
+                        <li><b>Filter Replacements:-</b> From air filters to cabin filters, we'll replace filters to
+                            maintain optimal air quality and engine performance.</li>
+                    </ul>
+
+                </div>
+
+                <!--Box 3 -->
+                <div class="service_box">
+                    <h3>Diagnostics</h3>
+                    <br>
+                    <ul>
+                        <li><b>Check Engine Light Diagnostics:-</b> If your check engine light is on, we'll perform
+                            diagnostic tests to identify the underlying cause and recommend necessary repairs.</li>
+                        <br>
+                        <li><b>Computer Diagnostics:-</b> Our state-of-the-art diagnostic equipment allows us to
+                            pinpoint issues with your vehicle's onboard computer system quickly and accurately.</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="service_content_api">
+                <h1>Schedule Your Appointment</h1>
+                <br>
+                <p>Ready to give your vehicle the care it deserves? Schedule your service appointment with us today! If
+                    you have any questions or would like more information about our services, feel free to contact us,
+                    We're here to help.
+                    Thank you for choosing RUHAUTO for all of your service and maintenance needs. We look forward to
+                    serving you!</p>
+            </div>
+    </section>
+
+    <!--Footer -->
+    <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+
+                <a href="#" class="logo"><i class='bx bxs-car'></i> RUH<span>AUTO</span></a>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Page</h3>
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About Us</a>
+                <a href="#contact-us">Contact Us</a>
+                <a href="#blog">Our Blog</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Legal</h3>
+                <a href="#">Privacy</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p href="#">Sri Lanka</p>
+                <p href="#">United States</p>
+                <p href="#">Japan</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; RuhAuto All right reserved</p>
+        </div>
+    </section>
+
+    <!--Link to js -->
+    <script src="../../../main.js"></script>
+
+</html>
