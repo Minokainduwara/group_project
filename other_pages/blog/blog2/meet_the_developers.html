@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Developers</title>
+    <style>
+
+        body{
+            background-color: #111619;
+        }
+
+        .developers-body{
+            max-width: 1300px;
+            background: url("./dev_images/image2.jpg");
+            max-width: 1300px;
+            margin: auto;
+            width: 100%;
+            min-height: 640px;
+            display: flex;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center left ;
+            justify-content: center;
+        }
+
+        .d-body-head{
+            color: rgb(216, 206, 206);
+            font-size: 60px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .dil1{
+            text-align: center;
+            color: rgb(245, 151, 0);
+            padding: 10px 100px;
+        }
+
+        .marq-div{
+            display: flex;
+        }
+
+        .circle{
+            border-color: #111619 #f5ab0c;
+            border-image: none;
+            border-radius: 50% 50% 50% 50%;
+            border-style: solid;
+            border-width: 15px;
+            height: 200px;
+            width: 200px;
+            overflow: hidden;
+        }
+
+        .person-Name{
+            color: #f5ab0c;
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+
+        .person-email{
+            color: white;
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+
+        .degree{
+            color: white;
+            font-weight: 100;
+            font-size: 0.9rem;
+        }
+
+        .dev-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 45px;
+            padding: 20px 20px;
+        }
+
+        .person-details{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .developer-members{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
+    </style>
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../../style.css"> 
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <!-- Nav Container -->
+        <div class="nav container">
+            <!-- Menu icon -->
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!-- Logo -->
+            <a href="#" class="logo"><i class='bx bxs-car'></i> RUH<span>AUTO</span></a>
+
+            <!-- Nav List-->
+            <ul class="navbar">
+                <li><a href="../../../index.html" >Home</a></li>
+                <li><a href="#" class="active">Developers</a></li>
+
+            </ul>
+
+            <div class="search-and-sign">
+
+                <!--Search Icon-->
+                <i class='bx bx-search' id="search-icon"></i>
+
+                <!--Sign in Icon-->
+                <a href="#sign_in"><i class='bx bxs-user-circle' id="sign-in"></i></a>
+            </div>
+
+            <!--Search Box-->
+            <div class="search-box container">
+                <input type="search" name="" id="" placeholder="search here...">
+            </div>
+        </div>
+    </header>
+
+    <!--Top section-->
+    <section style="padding: 0%;">
+        <div class="developers-body">
+        <div class="d-body-head">
+            <h1>Meet The developers</h1>
+        </div>
+        </div>
+    </section>
+    <div>
+        <marquee>
+        <div class="marq-div">
+                  
+                    <div class="col1"> 
+                        <h1 class="dil1">BRANDING</h1>
+                    </div>
+                
+                   <div class="col2">
+                        <h1 class="dil1">CREATIVE</h1>
+                    </div>
+                  
+                   <div class="col3">
+                        <h1 class="dil1">INNOVATIVE</h1>
+                   </div>
+                   
+                   <div class="col4">
+                        <h1 class="dil1">QUALITY</h1>
+                   </div>
+        </div>
+        </marquee>
+    </div>
+
+    <!--Members of the team-->
+    <section>
+        <div class="developer-members">
+
+            <!--Minoka-->
+            <div class="dev-box">
+                <div class="circle">
+                    <img src="./dev_images/minoka.jpg">
+                </div>
+                <div class="person-details">
+                    <div class="person-Name"><p>MINOKA WICKRAMASINGHE</p></div>
+                    <div class="person-email"><p>minokainduwara@gmail.com</p></div>
+                    <div class="degree"><p>Bachelor of Information  and <br>Communication Technology</p></div>
+                </div>
+            </div>
+
+            <!--Chathusha-->
+            <div class="dev-box">
+                <div class="circle">
+                    <img src="./dev_images/Chathusha.jpeg">
+                </div>
+                <div class="person-details">
+                    <div class="person-Name"><p>CHATHUSHA DAMRUWAN</p></div>
+                    <div class="person-email"><p>chathushadamruwan@gmail.com</p></div>
+                    <div class="degree"><p>Bachelor of Information  and <br>Communication Technology</p></div>
+                </div>
+            </div>
+
+            <!--Dilhara-->
+
+            <div class="dev-box">
+                <div class="circle">
+                    <img src="./dev_images/Dilhara.jpg">
+                </div>
+                <div class="person-details">
+                    <div class="person-Name"><p>DILHARA SAMARANAYAKE</p></div>
+                    <div class="person-email"><p>dilharasamaranayake74@gmail.com</p></div>
+                    <div class="degree"><p>Bachelor of Information  and <br>Communication Technology</p></div>
+                </div>
+            </div>
+
+            <!--Navith-->
+            <div class="dev-box">
+                <div class="circle">
+                    <img src="./dev_images/navith1.jpg">
+                </div>
+                <div class="person-details">
+                    <div class="person-Name"><p>NAVITH DEWSITHA</p></div>
+                    <div class="person-email"><p>navithdewsitha@gmail.com</p></div>
+                    <div class="degree"><p>Bachelor of Information  and <br>Communication Technology</p></div>
+                </div>
+            </div>
+
+            <!--Gaveshi-->
+            <div class="dev-box">
+                <div class="circle">
+                    <img src="./dev_images/gaweshi2.jpg">
+                </div>
+                <div class="person-details">
+                    <div class="person-Name"><p>GAWESHI FERNANDO</p></div>
+                    <div class="person-email"><p>gaveshisankalpana@gmail.com</p></div>
+                    <div class="degree"><p>Bachelor of Information  and <br>Communication Technology</p></div>
+                </div>
+            </div>
+
+            <!--Piumika-->
+            <div class="dev-box">
+                <div class="circle">
+                    <img src="./dev_images/piyumi.jpg">
+                </div>
+                <div class="person-details">
+                    <div class="person-Name"><p>PIYUMIKA SANKALPANA</p></div>
+                    <div class="person-email"><p>piyumikafernando@gmail.com</p></div>
+                    <div class="degree"><p>Bachelor of Information  and <br>Communication Technology</p></div>
+                </div>
+            </div>
+
+            <!--Kavindu-->
+            <div class="dev-box">
+                <div class="circle">
+                    <img src="./dev_images/kavindu.jpg">
+                </div>
+                <div class="person-details">
+                    <div class="person-Name"><p>KAVINDU KRISHAN</p></div>
+                    <div class="person-email"><p>kavindukrishan418@gmail.com</p></div>
+                    <div class="degree"><p>Bachelor of Information  and <br>Communication Technology</p></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Footer -->
+    <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+
+                <a href="#" class="logo"><i class='bx bxs-car'></i> RUH<span>AUTO</span></a>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Page</h3>
+                <a href="../../../index.html">Home</a>
+                <a href="../../../index.html">Services</a>
+                <a href="#about">About Us</a>
+                <a href="#contact-us">Contact Us</a>
+                <a href="#blog">Our Blog</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Legal</h3>
+                <a href="#">Privacy</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p href="#">Sri Lanka</p>
+                <p href="#">United States</p>
+                <p href="#">Japan</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; RuhAuto All right reserved</p>
+        </div>
+    </section>
+
+
+
+    <!--Link to js -->
+    <script src="../../../main.js"></script>
+</body>
+
+</html>

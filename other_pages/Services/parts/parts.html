@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUHAUTO</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../../style.css">
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style type="text/css">
+        .parts_background {
+
+            margin: auto;
+            min-height: 440px;
+            background: url("./images/parts_background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center left;
+            margin-left: 5%;
+            margin-right: 5%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .parts_background_head {
+            margin-top: 12%;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .parts_background_head h1 {
+            color: #f5ab0c;
+            font-size: 3rem;
+            text-shadow: 1px 1px #000;
+        }
+
+        .parts_background_head p {
+            color: #fff;
+            font-size: 1.5rem;
+            text-shadow: 1px 1px #000;
+        }
+
+        .parts_main {
+            width: 90%;
+            margin-left: 5%;
+            margin-left: 5%;
+        }
+
+        .parts_detiled_row {
+            display: flex;
+            gap: 10%;
+            margin-bottom: 60px;
+        }
+
+        .parts_detiled {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background: linear-gradient(to bottom, #f5ab0c -100%, #000000 100%);
+            height: auto;
+            box-shadow: 1px 1px #000;
+
+        }
+
+        .image_parts {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+        }
+
+        .parts_description p {
+            text-align: center;
+            color: #dbdbdb;
+            ;
+            padding: 8px;
+        }
+
+        .image_parts img {
+            width: 80%;
+            border-radius: 5px;
+            box-shadow: 1px 1px #000;
+            height: 190px;
+        }
+
+        .parts_button {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .parts_button input {
+            width: 100%;
+            margin-left: 20%;
+            margin-right: 20%;
+            height: 40px;
+            margin-top: 5%;
+            border: 1px solid #f5ab0c;
+            border-radius: 3px;
+            text-shadow: 0.5px 0.5px #000;
+            color: #f5ab0c;
+            margin-bottom: 5%;
+        }
+        .parts_button input:hover{
+            background-color:#f5ab0c;
+            color: #fff;
+        }
+
+        .collection_2-images {
+            border-bottom: 1px solid #f5ab0c;
+            border-top: 1px solid #f5ab0c;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            margin-left: 13%;
+            margin-right: 13%;
+        }
+
+        .collection_2-images .collection-img {
+            display: inline-block;
+            vertical-align: middle;
+
+        }
+
+        .collection_2-images .collection-img img {
+            margin-left: 17%;
+            width: 50%;
+        }
+
+        .collection_2-images .collection-img img:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+
+        .collection_2 {
+            margin: auto;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <!-- Nav Container -->
+        <div class="nav container">
+            <!-- Menu icon -->
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!-- Logo -->
+            <a href="#" class="logo"><i class='bx bxs-car'></i> RUH<span>AUTO</span></a>
+
+            <!-- Nav List-->
+            <ul class="navbar">
+                <li><a href="../../../index.html" >Home</a></li>
+                <!-- <li><a href="#services">Services</a></li> -->
+                <li><a href="#about" class="active">PARTS AND ACCESSORIES</a></li>
+            </ul>
+
+            <div class="search-and-sign">
+
+                <!--Search Icon-->
+                <i class='bx bx-search' id="search-icon"></i>
+
+                <!--Sign in Icon-->
+                <a href="#sign_in"><i class='bx bxs-user-circle' id="sign-in"></i></a>
+            </div>
+
+            <!--Search Box-->
+            <div class="search-box container">
+                <input type="search" name="" id="" placeholder="search here...">
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- Home -->
+    <section class="parts_background">
+        <div class="parts_background_head">
+            <h1>VEHICLE PARTS & ACCESSORIES</h1>
+            <p>Customize, modify, Upgrade, Rapair, Replace</p>
+        </div>
+    </section>
+
+    <section class="collection_2">
+        <div class="collection_2-images">
+            <div class="collection-img"><img src="./images/logo/bmw.jpg"></div>
+            <div class="collection-img"><img src="./images/logo/ferari.jpg"></div>
+            <div class="collection-img"><img src="./images/logo/benz.jpg"></div>
+            <div class="collection-img"><img src="./images/logo/tesla.jpg"></div>
+            <div class="collection-img"><img src="./images/logo/lam.jpg"></div>
+
+        </div>
+    </section>
+
+    <section class="parts_main">
+        <div class="parts_detiled_row">
+            <div class="parts_detiled">
+                <div class="image_parts">
+                    <img src="./images/tires.jpg">
+                </div>
+                <div class="parts_description">
+                    <p>
+                        Tyres are the point of contact between you and the road, and while people do realise the role
+                        they play in grip, most underestimate this and also neglect the other areas they have an impact
+                        on, like ride quality, road noise and braking.</p>
+                </div>
+                <div class="parts_button">
+                    <input type="button" value="Shop Now">
+                </div>
+            </div>
+            <div class="parts_detiled">
+                <div class="image_parts">
+                    <img src="./images/oil.jpg">
+                </div>
+                <div class="parts_description">
+                    <p>Motor oil, engine oil, or engine lubricant is any one of various substances used for the
+                        lubrication of internal combustion engines. They typically consist of base oils enhanced with
+                        various additives, particularly antiwear additives, detergents, dispersants, and, for
+                        multi-grade oils, viscosity index improvers.</p>
+                </div>
+                <div class="parts_button">
+                    <input type="button" value="Shop Now">
+                </div>
+            </div>
+            <div class="parts_detiled">
+                <div class="image_parts">
+                    <img src="./images/modification.jpg">
+                </div>
+                <div class="parts_description">
+                    <p>Long time advocates of making performance, visual and aesthetic improvements to vehicles, we
+                        offer alloy wheels, suspension and handling upgrades, spoilers, exhausts, interior mods, and
+                        bodykits.</p>
+                </div>
+                <div class="parts_button">
+                    <input type="button" value="Shop Now">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="parts_detiled_row">
+            <div class="parts_detiled">
+                <div class="image_parts">
+                    <img src="./images/battry.jpg.jpg">
+                </div>
+                <div class="parts_description">
+                    <p>A battery is a device that converts chemical energy contained within its active materials
+                        directly into electric
+                        energy by means of an electrochemical oxidation-reduction (redox) reaction. This type of
+                        reaction involves the transfer
+                        of electrons from one material to another via an electric circuit..</p>
+                </div>
+                <div class="parts_button">
+                    <input type="button" value="Shop Now">
+                </div>
+            </div>
+            <div class="parts_detiled">
+                <div class="image_parts">
+                    <img src="./images/tool.jpg.jpeg">
+                </div>
+                <div class="parts_description">
+
+                    <p>
+                        Automotive tools can be hand or power tools. Automotive hand tools include wrenches,
+                        ratchets and pliers to name a few, and power tools include drills, power wrenches and some types
+                        of tire inflators. Most automotive tools,
+                        such as wrenches and screwdrivers, need to be strong enough to withstand rough use.</p>
+                </div>
+                <div class="parts_button">
+                    <input type="button" value="Shop Now">
+                </div>
+            </div>
+            <div class="parts_detiled">
+                <div class="image_parts">
+                    <img src="./images/engine_parts.jpg">
+                </div>
+                <div class="parts_description">
+                    <p>The engine in a car consists of several essential parts, including the cylinder block, cylinders,
+                        pistons, crankshaft, camshaft, valves, spark plugs, fuel injectors, gasket, timing belt/chain,
+                        oil pump,
+                        cooling system, air filter, and exhaust system, each serving a specific function in the engine's
+                        operation.</p>
+                </div>
+                <div class="parts_button">
+                    <input type="button" value="Shop Now">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+         <!--Footer -->
+         <section class="footer">
+            <div class="footer-container container">
+                <div class="footer-box">
+    
+                    <a href="#" class="logo"><i class='bx bxs-car'></i> RUH<span>AUTO</span></a>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+                <div class="footer-box">
+                    <h3>Page</h3>
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#about">About Us</a>
+                    <a href="#contact-us">Contact Us</a>
+                    <a href="#blog">Our Blog</a>
+                </div>
+    
+                <div class="footer-box">
+                    <h3>Legal</h3>
+                    <a href="#">Privacy</a>
+                    <a href="#">Refund Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+    
+                <div class="footer-box">
+                    <h3>Contact</h3>
+                    <p href="#">Sri Lanka</p>
+                    <p href="#">United States</p>
+                    <p href="#">Japan</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&#169; RuhAuto All right reserved</p>
+            </div>
+        </section>
+    
+    
+    
+            <!--Link to js -->
+            <script src="../../../main.js"></script>
+</body>
+
+</html>

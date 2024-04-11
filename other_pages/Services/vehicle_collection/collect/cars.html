@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cars</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../../../style.css">
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style type="text/css">
+        .car_background {
+            max-width: 1300px;
+            margin: auto;
+            width: 100%;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            background: url(../Images/backgroundcar3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center left;
+        }
+
+        .car-text h3 {
+            color: var(--main-color);
+            font-size: 1.6rem;
+            margin-top: 30%;
+            text-shadow: 2px 2px #000;
+        }
+
+        .car-text {
+            margin: auto;
+        }
+
+        .vehicle_container {
+            max-width: 1300px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            column-gap: 20px;
+            border: 1px solid var(--main-color);
+            border-radius: 2px;
+            margin-bottom: 30px;
+            transition: all 0.4s;
+        }
+
+        .suv_container,
+        .bike_container,
+        .electric_container,
+        .car_container,
+        .van_container,
+        .jeep_container:hover {
+            border: 1px solid var(--main-color);
+            color: var(--bg-color);
+        }
+
+        .vehicle_image {
+            width: 40%;
+            padding: 25px;
+        }
+
+        .vehicle_content {
+            padding: 25px;
+            width: 60%;
+            padding-left: 25px;
+        }
+
+        .vehicle_content p,
+        h3 {
+            color: #fff;
+        }
+
+        .vehicle_content h2 {
+            color: var(--main-color);
+        }
+
+        .vehicle_container .vehicle_image img:hover {
+            transform: scale(1.05);
+            transition: 0.5s;
+        }
+
+        .vehicle_container:hover {
+            border: 1px solid var(--text-color);
+            color: var(--bg-color);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <!-- Nav Container -->
+        <div class="nav container">
+            <!-- Menu icon -->
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!-- Logo -->
+            <a href="#" class="logo"><i class='bx bxs-car'></i> RUH<span>AUTO</span></a>
+
+            <!-- Nav List-->
+            <ul class="navbar">
+                <li><a href="../../../../index.html" >Home</a></li>
+                <!-- <li><a href="#services">Services</a></li> -->
+                <li><a href="../collection.html">Vehicle Collection</a></li>
+                <li><a href="#" class="active">Cars</a></li>
+            </ul>
+
+            <div class="search-and-sign">
+
+                <!--Search Icon-->
+                <i class='bx bx-search' id="search-icon"></i>
+
+                <!--Sign in Icon-->
+                <a href="#sign_in"><i class='bx bxs-user-circle' id="sign-in"></i></a>
+            </div>
+
+            <!--Search Box-->
+            <div class="search-box container">
+                <input type="search" name="" id="" placeholder="search here...">
+            </div>
+        </div>
+    </header>
+    <section class="car_background" alt="">
+        <div class="car-text">
+            <h3></h3>
+        </div>
+    </section>
+
+    <section class="car_discription">
+        <div class="vehicle_container">
+            <div class="vehicle_image">
+                <img src="../Images/collection/cars/hondacivic.jpg">
+            </div>
+            <div class="vehicle_content">
+                <h2>2024 Honda Civic</h2><br>
+                <p>The 2024 Honda Civic: stylish, efficient, and reliable. Sleek design, spacious interior, advanced
+                    tech for safety and convenience. Range of efficient engines, excellent fuel economy. Perfect for
+                    daily commutes or weekend adventures.</p><br>
+                <h3>$25,000$</h3>
+            </div>
+        </div>
+
+        <div class="vehicle_container">
+            <div class="vehicle_image">
+                <img src="../Images/collection/cars/toyotacamry.jpg">
+            </div>
+            <div class="vehicle_content">
+                <h2>2024 Toyota Camry6</h2><br>
+                <p>The 2024 Toyota Camry offers sleek styling, advanced technology, and efficient performance. With its
+                    reputation for reliability and comfort, it continues to be a top choice in the sedan market.</p><br>
+                <h3>26,420$</h3>
+            </div>
+        </div>
+
+        <div class="vehicle_container">
+            <div class="vehicle_image">
+                <img src="../Images/collection/cars/Mercedes.jpg">
+            </div>
+            <div class="vehicle_content">
+                <h2>2023 Mercedes-Benz E-Class</h2><br>
+                <p>The 2023 Mercedes-Benz E-Class offers sophisticated design, cutting-edge technology, and refined
+                    performance. With its luxurious interior and advanced driver assistance features, it sets new
+                    standards in the midsize luxury sedan segment.</p><br>
+                <h3>$57,900$</h3>
+            </div>
+        </div>
+
+        <div class="vehicle_container">
+            <div class="vehicle_image">
+                <img src="../Images/collection/cars/chrysler.jpg">
+            </div>
+            <div class="vehicle_content">
+                <h2>2023 Chrysler 300</h2><br>
+                <p>The 2023 Chrysler 300 offers timeless style, refined comfort, and advanced technology, embodying
+                    luxury and performance with a spacious interior and powerful engine options.k.</p><br>
+                <h3>$36,145</h3>
+            </div>
+        </div>
+
+        <div class="vehicle_container">
+            <div class="vehicle_image">
+                <img src="../Images/collection/cars/AudiA7.jpg">
+            </div>
+            <div class="vehicle_content">
+                <h2>2024 Audi A7</h2><br>
+                <p>The 2024 Audi A7 offers sleek styling, advanced technology, and impressive performance. With its
+                    luxurious interior and innovative features, it epitomizes modern elegance and driving excellence.
+                </p><br>
+                <h3>$72,000</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer -->
+    <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+
+                <a href="#" class="logo"><i class='bx bxs-car'></i> RUH<span>AUTO</span></a>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Page</h3>
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About Us</a>
+                <a href="#contact-us">Contact Us</a>
+                <a href="#blog">Our Blog</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Legal</h3>
+                <a href="#">Privacy</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p href="#">Sri Lanka</p>
+                <p href="#">United States</p>
+                <p href="#">Japan</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; RuhAuto All right reserved</p>
+        </div>
+    </section>
+
+
+    <!--Link to js -->
+    <script src="../../../../main.js"></script>
+</body>
+
+</html>

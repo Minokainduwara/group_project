@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bike</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../../../style.css">
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style type="text/css">
+        .bike_background {
+            max-width: 100%;
+            margin: auto;
+            width: 100%;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            background: url(../Images/background_bike2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center left;
+        }
+
+        .bike-text h3 {
+            text-align: center;
+            color: var(--main-color);
+            font-size: 2rem;
+        }
+
+        .bike-text {
+            margin: auto;
+        }
+
+        .vehicle_container {
+            max-width: 1300px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            column-gap: 20px;
+            border: 1px solid var(--main-color);
+            border-radius: 2px;
+            margin-bottom: 30px;
+            transition: all 0.4s;
+        }
+
+        .suv_container,
+        .bike_container,
+        .electric_container,
+        .car_container,
+        .van_container,
+        .jeep_container:hover {
+            border: 1px solid var(--main-color);
+            color: var(--bg-color);
+        }
+
+        .vehicle_image {
+            width: 40%;
+            padding: 25px;
+        }
+
+        .vehicle_content {
+            padding: 25px;
+            width: 60%;
+            padding-left: 25px;
+        }
+
+        .vehicle_content p,
+        h3 {
+            color: #fff;
+        }
+
+        .vehicle_content h2 {
+            color: var(--main-color);
+        }
+
+        .vehicle_container .vehicle_image img:hover {
+            transform: scale(1.05);
+            transition: 0.5s;
+        }
+
+        .vehicle_container:hover {
+            border: 1px solid var(--text-color);
+            color: var(--bg-color);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <!-- Nav Container -->
+        <div class="nav container">
+            <!-- Menu icon -->
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!-- Logo -->
+            <a href="#" class="logo"><i class='bx bxs-car'></i> RUH<span>AUTO</span></a>
+
+            <!-- Nav List-->
+            <ul class="navbar">
+                <li><a href="../../../../index.html" >Home</a></li>
+                <!-- <li><a href="#services">Services</a></li> -->
+                <li><a href="../collection.html">Vehicle Collection</a></li>
+                <li><a href="#" class="active">Bike</a></li>
+            </ul>
+
+            <div class="search-and-sign">
+
+                <!--Search Icon-->
+                <i class='bx bx-search' id="search-icon"></i>
+
+                <!--Sign in Icon-->
+                <a href="#sign_in"><i class='bx bxs-user-circle' id="sign-in"></i></a>
+            </div>
+
+            <!--Search Box-->
+            <div class="search-box container">
+                <input type="search" name="" id="" placeholder="search here...">
+            </div>
+        </div>
+    </header>
+
+    <section class="bike_background" alt="">
+        <div class="bike-text">
+            <h3></h3>
+        </div>
+    </section>
+
+
+    <section class="bike_discription">
+
+        <div class="vehicle_container">
+            <div class="vehicle_image">
+                <img src="../Images/collection/bikes/Triumph3.jpg" alt="">
+            </div>
+            <div class="vehicle_content">
+                <h2>Rocket 3 Storm R</h2><br>
+                <p>The Rocket 3 Storm R is in a class of its own. With muscular power and record-breaking levels of
+                    torque, the explosive acceleration is matched only by the phenomenal handling and immaculate premium
+                    finish.</p><br>
+                <h3>24995$</h3>
+            </div>
+        </div>
+
+
+        <div class="vehicle_container">
+            <div class="vehicle_image">
+                <img src="../Images/collection/bikes/TriumphTiger.jpg" alt="">
+            </div>
+            <div class="vehicle_content">
+                <h2>tiger spot 660</h2><br>
+                <p>With its confidence-inspiring handling, superior triple performance and class-leading technology the
+                    Tiger Sport 660 sets the new benchmark for adventure sport versatility and fun.</p><br>
+                <h3>24995$</h3>
+            </div>
+        </div>
+
+
+        <div class="vehicle_container">
+            <div class="vehicle_image">
+                <img src="../Images/collection/bikes/XX4.jpg" alt="">
+            </div>
+            <div class="vehicle_content">
+                <h2>m2019 Honda TRX420FM1 FourTrax Rancher (4X4)</h2><br>
+                <p>kThe 2019 Honda TRX420FM1 FourTrax Rancher (4X4) is a rugged and versatile ATV powered by a 420cc
+                    fuel-injected engine. With 4X4 capabilities, it excels in off-road terrain and utility tasks. Known
+                    for its reliability and comfortable ride, it's a popular choice for both work and recreational
+                    riding.</p><br>
+                <h3>24995$</h3>
+            </div>
+        </div>
+
+
+        <div class="vehicle_container">
+            <div class="vehicle_image">
+                <img src="../Images/collection/bikes/diavel.jpg" alt="">
+            </div>
+            <div class="vehicle_content">
+                <h2>2023 DUCATI DIAVEL 1260</h2><br>
+                <p>kThe Diavel 1260 combines the performance of a maxi-naked with the ergonomics of a muscle cruiser.
+                    Its design reinterprets the Diavel style with a contemporary look and integrates perfectly the 159
+                    HP Testastretta DVT 1262 engine, beating heart of this new Diavel 1260.</p><br>
+                <h3>24995$</h3>
+            </div>
+        </div>
+
+
+        <div class="vehicle_container">
+            <div class="vehicle_image">
+                <img src="../Images/collection/bikes/Hypermotard.jpg" alt="">
+            </div>
+            <div class="vehicle_content">
+                <h2>2024 DUCATI HYPERMOTARD 698 MONO</h2><br>
+                <p>Climb aboard and let fun take charge. The new Hypermotard 698 Mono is the first single-cylinder
+                    road-going Supermotard by Ducati, born with just one aim – to transmit excitement, dominating the
+                    scene. Simple, lightweight, and agile, it is a fun bike with racing DNA.</p><br>
+                <h3>24995$</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer -->
+    <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+
+                <a href="#" class="logo"><i class='bx bxs-car'></i> RUH<span>AUTO</span></a>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Page</h3>
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About Us</a>
+                <a href="#contact-us">Contact Us</a>
+                <a href="#blog">Our Blog</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Legal</h3>
+                <a href="#">Privacy</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p href="#">Sri Lanka</p>
+                <p href="#">United States</p>
+                <p href="#">Japan</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; RuhAuto All right reserved</p>
+        </div>
+    </section>
+
+
+
+    <!--Link to js -->
+    <script src="../../../../main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SUV</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../../../style.css">
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style type="text/css">
+        .suv_background {
+            max-width: 1300px;
+            margin: auto;
+            width: 100%;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            background: url(../Images/background_suv.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center left;
+        }
+
+        .suv-text h3 {
+            text-align: center;
+            color: var(--main-color);
+            font-size: 2rem;
+        }
+
+        .suv-text {
+            margin: auto;
+        }
+
+        .vehicle_container {
+            max-width: 1300px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            column-gap: 20px;
+            border: 1px solid var(--main-color);
+            border-radius: 2px;
+            margin-bottom: 30px;
+            transition: all 0.4s;
+        }
+
+        .suv_container,
+        .bike_container,
+        .electric_container,
+        .car_container,
+        .van_container,
+        .jeep_container:hover {
+            border: 1px solid var(--main-color);
+            color: var(--bg-color);
+        }
+
+        .vehicle_image {
+            width: 40%;
+            padding: 25px;
+        }
+
+        .vehicle_content {
+            padding: 25px;
+            width: 60%;
+            padding-left: 25px;
+        }
+
+        .vehicle_content p,
+        h3 {
+            color: #fff;
+        }
+
+        .vehicle_content h2 {
+            color: var(--main-color);
+        }
+
+        .vehicle_container .vehicle_image img:hover {
+            transform: scale(1.05);
+            transition: 0.5s;
+        }
+
+        .vehicle_container:hover {
+            border: 1px solid var(--text-color);
+            color: var(--bg-color);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <!-- Nav Container -->
+        <div class="nav container">
+            <!-- Menu icon -->
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!-- Logo -->
+            <a href="#" class="logo"><i class='bx bxs-car'></i> RUH<span>AUTO</span></a>
+
+            <!-- Nav List-->
+            <ul class="navbar">
+                <li><a href="../../../../index.html" >Home</a></li>
+                <!-- <li><a href="#services">Services</a></li> -->
+                <li><a href="../collection.html">Vehicle Collection</a></li>
+                <li><a href="#" class="active">SUV</a></li>
+
+            </ul>
+
+            <div class="search-and-sign">
+
+                <!--Search Icon-->
+                <i class='bx bx-search' id="search-icon"></i>
+
+                <!--Sign in Icon-->
+                <a href="#sign_in"><i class='bx bxs-user-circle' id="sign-in"></i></a>
+            </div>
+
+            <!--Search Box-->
+            <div class="search-box container">
+                <input type="search" name="" id="" placeholder="search here...">
+            </div>
+        </div>
+    </header>
+
+    <section class="suv_background" alt="">
+        <div class="suv-text">
+            <h3></h3>
+        </div>
+    </section>
+
+    <section class="suv_discription">
+        <div class="vehicle_container">
+            <div class="vehicle_image">
+                <img src="../Images/collection/suvs/Volkswagen.jpg">
+            </div>
+            <div class="vehicle_content">
+                <h2>2023 Volkswagen Taos</h2><br>
+                <p>Volkswagen's smallest SUV is a big deal. The all-new Taos packs in plenty of modern tech and safety
+                    features into a tidy but spacious package. It's one of the most well-rounded and family-friendly
+                    offerings in the class.</p><br>
+                <h3>24000-34000$</h3>
+            </div>
+        </div>
+
+        <div class="vehicle_container">
+            <div class="vehicle_image">
+                <img src="../Images/collection/suvs/HondaPasspor.jpg">
+            </div>
+            <div class="vehicle_content">
+                <h2>2024 Honda Passport</h2><br>
+                <p>VThe top-ranked Honda Passport is one of the most versatile midsize SUVs in the market. It exudes
+                    athletic qualities but also delivers a comfortable ride, tons of passenger and cargo space, and a
+                    good list of standard features. Put this at the top of your list.</p><br>
+                <h3>41000-48000$</h3>
+            </div>
+        </div>
+
+
+        <div class="vehicle_container">
+            <div class="vehicle_image">
+                <img src="../Images/collection/suvs/Yukon.jpg">
+            </div>
+            <div class="vehicle_content">
+                <h2>2023 GMC Yukon</h2><br>
+                <p>Volkswagen's smallest SUV is a big deal. The all-nThe GMC Yukon is a great pick for a large SUV. It
+                    boasts a comfortable ride, roomy interior, an easy-driving demeanor and plenty of towing capability.
+                </p><br>
+                <h3>57000-94000$</h3>
+            </div>
+        </div>
+
+
+        <div class="vehicle_container">
+            <div class="vehicle_image">
+                <img src="../Images/collection/suvs/BMW.jpg">
+            </div>
+            <div class="vehicle_content">
+                <h2>2024 BMW X1</h2><br>
+                <p>Volkswagen's smallest SUV is a big deal. The all-nThe X1 may be BMW's lowest-priced SUV, but it
+                    doesn't skimp on the things that make crossovers so desirable. You can expect ample passenger and
+                    cargo space, sporty driving characteristics and a premium cabin, all of which help make the X1 a
+                    great pick.</p><br>
+                <h3>40500-49000$</h3>
+            </div>
+        </div>
+
+
+        <div class="vehicle_container">
+            <div class="vehicle_image">
+                <img src="../Images/collection/suvs/Mercedes.png">
+            </div>
+            <div class="vehicle_content">
+                <h2>2024 Mercedes-Benz GLE-Class</h2><br>
+                <p>The Mercedes GLE is one of the best luxury SUVs on sale today. It brings the heat with a top-notch
+                    interior, exceptional build quality, helpful technology features and a diverse lineup of engines.
+                </p><br>
+                <h3>62000-127700$</h3>
+            </div>
+        </div>
+
+
+    </section>
+
+     <!--Footer -->
+     <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+
+                <a href="#" class="logo"><i class='bx bxs-car'></i> RUH<span>AUTO</span></a>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Page</h3>
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About Us</a>
+                <a href="#contact-us">Contact Us</a>
+                <a href="#blog">Our Blog</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Legal</h3>
+                <a href="#">Privacy</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p href="#">Sri Lanka</p>
+                <p href="#">United States</p>
+                <p href="#">Japan</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; RuhAuto All right reserved</p>
+        </div>
+    </section>
+
+    <!--Link to js -->
+    <script src="../../../../main.js"></script>
+</body>
+
+</html>

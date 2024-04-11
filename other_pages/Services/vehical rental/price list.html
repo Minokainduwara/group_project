@@ -1,0 +1,350 @@
+<!--<html>
+	<head>
+	<style>
+		body{
+			background-color:#111619;
+		}
+		#div1{
+			width:100%;height:200px;background-color:#111111;
+		}
+		#div2{
+			width:60%;height:200px;float:right;color:white;background-color:pink;
+		}
+		#btn{
+			width:20%;
+			height:50px;
+			float:right;
+			color:white;
+			background-color:#f5ab0c;
+		}
+		#div3{
+				margin:-40 50;
+		}
+		#money{
+			color:white;	
+		}
+		#money_id{
+			float:right;
+		}
+	</style>
+	<script src="gggg.js"></script>
+	</head>
+	<body>
+	<div id="div1">
+		<image src="electronic car.jpg">
+		<div id="div2">
+		<h2>Electronic car</h2>
+		<br/>
+		4 seats<br/>
+		2 Large bags<br/>
+		1 Small bag<br/>
+		
+		<div id="div3">
+			<p id="money"></p>
+			<button id="btn" type="button" value="Book Now">Book Now</button>
+		</div>
+		</div>
+	</div>
+	
+	<br>
+	<div id="div1">
+		<image src="benz3.jpg">
+		<div id="div2">
+		<h2>Car</h2>
+		<br/>
+		5 seats<br/>
+		2 Large bags<br/>
+		1 Small bag<br/>
+		
+		<div id="div3">
+			<p id="money">fhfdjfj</p>
+			<button id="btn" type="button" value="money">Book Now</button>
+		</div>
+		</div>
+	</div>
+	<br>
+	<div id="div1">
+		<image src="suv22.jpg">
+		<div id="div2">
+		<h2>SUV</h2>
+		<br/>
+		6 seats<br/>
+		3 Large bags<br/>
+		2 Small bag<br/>
+		
+		<div id="div3">
+			
+			<button id="btn" type="button" value="money">Book Now</button>
+		</div>
+		<div id="money_id"><p id="money">money<p></div>
+		</div>
+	</div>
+	<br>
+	<div id="div1">
+		<image src="jeep.jpg">
+		<div id="div2">
+		<h2>Jeep</h2>
+		<br/>
+		7 seats<br/>
+		2 Large bags<br/>
+		1 Small bag<br/>
+		
+		<div id="div3">
+			<button id="btn" type="button" value="money">Book Now</button>
+		</div>
+		</div>
+	</div>
+	<br>
+	<div id="div1">
+		<image src="van.jpg">
+		<div id="div2">
+		<h2>Van</h2>
+		<br/>
+		10 seats<br/>
+		3 Large bags<br/>
+		3 Small bag<br/>
+		
+		<div id="div3">
+			<button id="btn" type="button" value="money">Book Now</button>
+		</div>
+		</div>
+	</div>
+	<br>
+	<div id="div1">
+		<image src="bike.jpg">
+		<div id="div2">
+		<h2>Bike</h2>
+		<br/>
+		2 seats<br/>
+		1 Large bags<br/>
+		1 Small bag<br/>
+		
+		<div id="div3">
+			<button id="btn" type="button" value="money">Book Now</button>
+		</div>
+		</div>
+	</div>
+	
+	</body>
+</html>-->
+
+<html>
+  <head>
+    <style>
+      body {
+          background: linear-gradient(to left, #f5ab0c -80%, #000000 100%);
+
+      }
+
+      .one {
+        display: flex;
+        column-gap: 20%;
+       
+        padding: 8px;
+        background-color: #111619;
+      }
+
+      .two {
+        width: 300px;
+      }
+      .two img {
+        border: 3px solid #fff;
+        height: 200px;
+        width: 350px;
+      }
+      .tree {
+        
+        width: 200px;
+        color: white;
+        float: center;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center; /* Horizontal alignment */
+        align-items: center; /* Vertical alignment */
+        height: 100vh; /* Adjust the height as needed */
+        justify-content: center;
+        display: flex;
+      }
+
+      .four {
+        padding: 10px;
+        
+      }
+      .six {
+        margin-top: 60px;
+        
+      }
+      .five {
+        margin-top: 30px;
+        
+        color: white;
+      }
+      #btn {
+        width: 150px;
+        height: 50px;
+        color: white;
+        background: linear-gradient(to left, #f5ab0c -80%, #000000 100%);
+      }
+      #person{
+        height: :30px;
+        width:30px;
+      }
+      #smallbag{
+        height: :30px;
+        width:30px;
+      }
+      #laggage{
+        height: :30px;
+        width:30px;
+      }
+      #back{
+
+        width: 150px;
+        height: 50px;
+        color: white;
+        background: linear-gradient(to left, #f5ab0c -80%, #000000 100%);
+      }
+    </style>
+    <script src="gggg.js"></script>
+  </head>
+  <body>
+    <section>
+      <div class="one">
+        <div class="two">
+          <img src="electrical car.jpg" />
+        </div>
+        <div class="tree">
+          <h2>Electrical car</h2>
+          <p><img src="person2.jpg" id="person">&nbsp;&nbsp;4 seats</p>
+          <p><img src="luggage2.jpg" id="laggage">&nbsp;&nbsp;2 Large bags</p>
+          <p><img src="backpack.jpeg" id="smallbag">&nbsp;&nbsp;1 Small bag</p>
+        </div>
+        <div class="four">
+          <div class="five">
+            <p id="moneye">Find your Rental Fee</p>
+          </div>
+          <div class="six">
+            <button id="btn" type="button" onclick="rent()">Click Here</button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+
+      <div class="one">
+        <div class="two">
+          <img src="benz3.jpg"/>
+        </div>
+        <div class="tree">
+          <h2>Car</h2>
+          <p><img src="person2.jpg" id="person">&nbsp;&nbsp;5 seats</p>
+          <p><img src="luggage2.jpg" id="laggage">&nbsp;&nbsp;2 Large bags</p>
+          <p><img src="backpack.jpeg" id="smallbag">&nbsp;&nbsp;1 Small bag</p>
+        </div>
+        <div class="four">
+          <div class="five">
+            <p id="moneyc">Find your Rental Fee</p>
+          </div>
+          <div class="six">
+            <button id="btn" type="button" value="price" onclick="rent()">Click Here</button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+
+      <div class="one">
+        <div class="two">
+          <img src="suv22.jpg"/>
+        </div>
+        <div class="tree">
+          <h2>SUV</h2>
+          <p><img src="person2.jpg" id="person">&nbsp;&nbsp;6 seats</p>
+          <p><img src="luggage2.jpg" id="laggage">&nbsp;&nbsp;3 Large bags</p>
+          <p><img src="backpack.jpeg" id="smallbag">&nbsp;&nbsp;2 Small bag</p>
+        </div>
+        <div class="four">
+          <div class="five">
+            <p id="moneys">Find your Rental Fee</p>
+          </div>
+          <div class="six">
+            <button id="btn" type="button" value="price" onclick="rent()">Click Here</button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+
+      <div class="one">
+        <div class="two">
+          <img src="jeep.jpg" />
+        </div>
+        <div class="tree">
+          <h2>Jeep</h2>
+          <p><img src="person2.jpg" id="person">&nbsp;&nbsp;7 seats</p>
+          <p><img src="luggage2.jpg" id="laggage">&nbsp;&nbsp;2 Large bags</p>
+          <p><img src="backpack.jpeg" id="smallbag">&nbsp;&nbsp;1 Small bag</p>
+        </div>
+        <div class="four">
+          <div class="five">
+            <p id="moneyj">Find your Rental Fee</p>
+          </div>
+          <div class="six">
+            <button id="btn" type="button" value="price" onclick="rent()">Click Here</button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+
+      <div class="one">
+        <div class="two">
+          <img src="van3.jpg" />
+        </div>
+        <div class="tree">
+          <h2>Van</h2>
+          <p><img src="person2.jpg" id="person">&nbsp;&nbsp;10 seats</p>
+          <p><img src="luggage2.jpg" id="laggage">&nbsp;&nbsp;3 Large bags</p>
+          <p><img src="backpack.jpeg" id="smallbag">&nbsp;&nbsp;3 Small bag</p>
+        </div>
+        <div class="four">
+          <div class="five">
+            <p id="moneyv">Find your Rental Fee</p>
+          </div>
+          <div class="six">
+            <button id="btn" type="button" value="price" onclick="rent()">Click Here</button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+
+      <div class="one">
+        <div class="two">
+          <img src="bike3.jpeg" />
+        </div>
+        <div class="tree">
+          <h2>Bike</h2>
+          <p><img src="person2.jpg" id="person">&nbsp;&nbsp;2 seats</p>
+          <p><img src="luggage2.jpg" id="laggage">&nbsp;&nbsp;1 Large bags</p>
+          <p><img src="backpack.jpeg" id="smallbag">&nbsp;&nbsp;1 Small bag</p>
+        </div>
+        <div class="four">
+          <div class="five">
+            <p id="moneyb">Find your Rental Fee</p>
+          </div>
+          <div class="six">
+            <button id="btn" type="button" value="price" onclick="rent()">Click Here</button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <button type="button" id="back" onclick="back()"><---Previous page</button>
+      <br />
+      <br />
+    </section>
+  </body>
+</html>
